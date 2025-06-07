@@ -111,7 +111,7 @@ function changePhotoOnce(xx,yy) {
 
 
 function updateNotification(cart) {
-    let totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+    var totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
     document.querySelector('#noti').textContent = totalQuantity;
 }
 
